@@ -1,0 +1,426 @@
+{
+  "version": "2026.10.18-preview.1",
+  "kind": "source-preview",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 76,
+      "sha256": "ebe13f95633ddb205fe34cc35a03eae5a86ab030608ea99ca778eb10bb7afde7"
+    },
+    {
+      "path": "config/config.example.json",
+      "bytes": 718,
+      "sha256": "f1727c8808b8f1c9ff6832a33886235986be1ed52063a78b775cb4b95de93520"
+    },
+    {
+      "path": "config/production-supervisor.example.json",
+      "bytes": 194,
+      "sha256": "735143ece92d67091820c59283b74e8c5db077c7c362f9a3eab7ad6df0ecb821"
+    },
+    {
+      "path": "configure.py",
+      "bytes": 949,
+      "sha256": "26264ad96afa8db9bf2adc347fdb446a1ccef004304fdf7ec63aa8bc5ee1b526"
+    },
+    {
+      "path": "docs/AUTOMATION_PROMPT.txt",
+      "bytes": 838,
+      "sha256": "c44878ab1488d1355db04e477c4a70199688a6529d684ca24a7e8f2abd63bfa0"
+    },
+    {
+      "path": "docs/CODEX_AUTOMATION.md",
+      "bytes": 2013,
+      "sha256": "28c96baba8e7113657621e8b4c7d5032d89d5f4f448ca82e2e6df3c412cb25d1"
+    },
+    {
+      "path": "docs/OPERATION.md",
+      "bytes": 1898,
+      "sha256": "ab2af62dd4dd51f330672b85bb2d21ec8e38b4c8e1f68c290225ea667a75edd8"
+    },
+    {
+      "path": "doctor.py",
+      "bytes": 703,
+      "sha256": "1c91767e7bd15248cf3ed0cff3fdfe69377bc8c4c994b319b7b4838b6d9a9040"
+    },
+    {
+      "path": "install.cmd",
+      "bytes": 242,
+      "sha256": "b315cda4decf51000a50fabd7cc4ac745b513ad203fe4fb1b22e1063880c9b31"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4784,
+      "sha256": "f9178e196fc6829be78de082b15aebb2a4aee7959b10129b27748aed48a25f3f"
+    },
+    {
+      "path": "register_status_task.ps1",
+      "bytes": 868,
+      "sha256": "53e2f5fbcbc55a6468d6bdf17b41c62d89a0dad88d7a79618dcdc3ccad6cfd7f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 51,
+      "sha256": "9f6a5faef7efcc7cfc3981d5afe94a543ef4ef6fd749c2c67cfdb6dae06f417d"
+    },
+    {
+      "path": "skills/shared-notification/scripts/feishu_notify.py",
+      "bytes": 628,
+      "sha256": "c49bfbd08114392fefec2383a4dca369c804f4513a771cdef32dd711bda0d601"
+    },
+    {
+      "path": "skills/spoken-production-line/references/Codex本地并行SOP.md",
+      "bytes": 2919,
+      "sha256": "af1bf352e06a49a0d63b75039fe2e033ae28c758a623619ec15105172f34221a"
+    },
+    {
+      "path": "skills/spoken-production-line/references/plan-prompt.txt",
+      "bytes": 2689,
+      "sha256": "efb3ea2e1c77238a5baf7bf044f6d8c7c0b82c85c82bab9b4ff19bc79ad97435"
+    },
+    {
+      "path": "skills/spoken-production-line/references/production-confirm-prompt.txt",
+      "bytes": 897,
+      "sha256": "1e1fea945bdc9f663c31628aaa174139fd037e2c0d7ceabc6fc9af003d074567"
+    },
+    {
+      "path": "skills/spoken-production-line/references/three-copy-output-contract.txt",
+      "bytes": 1442,
+      "sha256": "b14782aa80b68d0cb7d4a13d02502ad14a4c2d565096fd112822dc5af71968ec"
+    },
+    {
+      "path": "skills/spoken-production-line/references/three-copy-prompt.txt",
+      "bytes": 3317,
+      "sha256": "453f8cbcfd60d2f8dc07fc99418f431ff1aa02eae3764e4eaf42ff90877d3510"
+    },
+    {
+      "path": "skills/spoken-production-line/references/会话任务归属与发送去重.md",
+      "bytes": 2382,
+      "sha256": "34f178f24f849030bbe9166f49ddf2d53a15920b905c0eef794e0451d96b33ef"
+    },
+    {
+      "path": "skills/spoken-production-line/references/作品元数据规范.md",
+      "bytes": 9405,
+      "sha256": "daa955207990395592775ca2c9a13f4202fd9d011c6b119079cc2f7be5ee5af7"
+    },
+    {
+      "path": "skills/spoken-production-line/references/使用说明.md",
+      "bytes": 2741,
+      "sha256": "f737a940256c36f9c76ac78980eab5523fe31e8b383fc86ba639eec952cc3d7d"
+    },
+    {
+      "path": "skills/spoken-production-line/references/发布使用说明.md",
+      "bytes": 8699,
+      "sha256": "fc3245bf37636e93ec7170e356a8900cfc62cc076814efff4f8a25dde1f73c25"
+    },
+    {
+      "path": "skills/spoken-production-line/references/增量迭代与运行审计.md",
+      "bytes": 1513,
+      "sha256": "c84efdd33b31545d3198946811d24464ec4aa08c3b56dea534efaeea2952c593"
+    },
+    {
+      "path": "skills/spoken-production-line/references/实测控制恢复与发送去重.md",
+      "bytes": 4175,
+      "sha256": "cde2c84db5e4530350210a3ff8b7b87e1b711e0281f801e4a2de6c5aa901cb03"
+    },
+    {
+      "path": "skills/spoken-production-line/references/循环任务管理.md",
+      "bytes": 1222,
+      "sha256": "ce65cb1eddd7eb551b223a8b59195e577c66bcacdf2baaab0c38444720cbf881"
+    },
+    {
+      "path": "skills/spoken-production-line/references/快捷命令目录.json",
+      "bytes": 9323,
+      "sha256": "1f8db17ff41179e252944b38b53981508378c41c82ee35794a39231526728b9f"
+    },
+    {
+      "path": "skills/spoken-production-line/references/成品通知格式.md",
+      "bytes": 2141,
+      "sha256": "2001511e85db996566be267f686b03f4949f240ad8118947762d6656037537ed"
+    },
+    {
+      "path": "skills/spoken-production-line/references/手动下载与状态识别.md",
+      "bytes": 1433,
+      "sha256": "910c41b73520b78f8cc1fb6dc63588f88b593dc6dd60298960a1723956fa5c3c"
+    },
+    {
+      "path": "skills/spoken-production-line/references/扩展能力与Library清理.md",
+      "bytes": 3785,
+      "sha256": "4c0cf205c6254dc8ecdd4300017ac942cff7504ccaaf0642b765cc418dd0c88f"
+    },
+    {
+      "path": "skills/spoken-production-line/references/本地归档流程.md",
+      "bytes": 2061,
+      "sha256": "9965f64ed4744d406ac104687d840ea2afe2ed1b1ed1aac1a6b144f19211972c"
+    },
+    {
+      "path": "skills/spoken-production-line/references/模板串线修复.md",
+      "bytes": 2319,
+      "sha256": "b0281e14d016deca5011583311a9228ba4d35d40847d02110fe3292ed3198ae4"
+    },
+    {
+      "path": "skills/spoken-production-line/references/生产SOP.md",
+      "bytes": 17254,
+      "sha256": "df7aa3f18041e00e7a91f63700d2fd2e7e150904cc20e972be4ad8403c7d2940"
+    },
+    {
+      "path": "skills/spoken-production-line/references/生产台账规范.md",
+      "bytes": 4130,
+      "sha256": "e8971993f19b1a0212110896afefc2910d136a53c6c80f4eb7b0f10c572de2e2"
+    },
+    {
+      "path": "skills/spoken-production-line/references/监测与模型分工.md",
+      "bytes": 4980,
+      "sha256": "a157aaaef167dada7bf54d701d4faa31b9c15cf8e9e233298aefaf191e4a82e0"
+    },
+    {
+      "path": "skills/spoken-production-line/references/缺页修复与文案流程.md",
+      "bytes": 3836,
+      "sha256": "4e8b6e8907a0a43b3e4eb213338656f9232e4a61fc683fa80bb54ed9f77f48eb"
+    },
+    {
+      "path": "skills/spoken-production-line/references/能力组合.json",
+      "bytes": 1687,
+      "sha256": "0336c2b9ce05cf4876abc99617ce71fdf2c01dd399e21404525047bb6781913f"
+    },
+    {
+      "path": "skills/spoken-production-line/references/补原料与出成品统一入口.md",
+      "bytes": 1736,
+      "sha256": "1f864e339b377e6eaca65eb3137bb83a9cf30af49bd82f5b245783ea9653a2df"
+    },
+    {
+      "path": "skills/spoken-production-line/references/设计方案.md",
+      "bytes": 7745,
+      "sha256": "777c53006073feca7c229e4ec588ac3acc343fda33c61ea5ea1563c0aa08884e"
+    },
+    {
+      "path": "skills/spoken-production-line/references/运行方式评测.md",
+      "bytes": 2053,
+      "sha256": "a164978e861c2a4584b8df3370a9cbbf547c0e7ba64fa37942877a8d5ce4dc77"
+    },
+    {
+      "path": "skills/spoken-production-line/references/返修对照与人工反馈.md",
+      "bytes": 3361,
+      "sha256": "c8c4262fbd8eebb5a02a6f37afcfb3c9b462dd9c52c410efce6e79c84b90b1f8"
+    },
+    {
+      "path": "skills/spoken-production-line/references/返工模板绑定流程.md",
+      "bytes": 1251,
+      "sha256": "85d73d0dc3b5b9822c598812b694918717e1ab6e3e65040a18466f8eaab18164"
+    },
+    {
+      "path": "skills/spoken-production-line/references/额度与排产.md",
+      "bytes": 13552,
+      "sha256": "c9c1d776ee2579482048cda8742169aef9c6fe2479a70c2da9aeef4d6f5022a3"
+    },
+    {
+      "path": "skills/spoken-production-line/references/飞书通知规范.md",
+      "bytes": 731,
+      "sha256": "2da687a1cd875fcfcc1bdc7e8ce376c672a031079c629dcbb7ce5b16f7c5198c"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/assemble_repaired_package.py",
+      "bytes": 18650,
+      "sha256": "b54a7550a4ca35341fa09037c04b30901d835c9634179b413046fc9b707b056c"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/batch_launch_queue.py",
+      "bytes": 16545,
+      "sha256": "bcf4104b7e57dd1c38d3e9b5672f067e6b5a31a9d71f42138100059e0611d2f2"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/build_simple_panel.py",
+      "bytes": 44734,
+      "sha256": "287da255f7f37ff45ac7b01366217812c2c82aeadd568c3b187ff6b7734eef0d"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/cdp_adapter.py",
+      "bytes": 3987,
+      "sha256": "51973a60dd9921816e96f643b61848f44beb9b40f7c2bb8814edfafebe563dfa"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/check_visual_acceptance.py",
+      "bytes": 7776,
+      "sha256": "5bc12c3ddc1c0fb807bef23d57df61480d387dac2a8d884ad073fddaf4ab5fad"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/cockpit_line.py",
+      "bytes": 4264,
+      "sha256": "20862b39067e8a240fffa2fed52cccecd4f4bdff8b39cb9371389cd9512df63b"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/download_verified_assets.py",
+      "bytes": 9826,
+      "sha256": "901f748d846a6a9a0abbb7a8550eca6d410c5e544345d51dfc25ebd56d591930"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/download_visible_set.py",
+      "bytes": 2460,
+      "sha256": "d66ae40752a91a0593c47e81cbc5a64fcbbdc31f0e832a47cf1dcf8c9b9420a6"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/ensure_phone_gallery_metadata.py",
+      "bytes": 8451,
+      "sha256": "a6c6275a711aa3d462afaf0daff0fb86959f018dbbb00262cd4c67aa5feb140e"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/inspect_generation_turn.py",
+      "bytes": 4134,
+      "sha256": "70c7e965cf26caf1b1f0fd8bf52a154fe48fc09f0ee887d3d23a84058a3b9f9c"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/panel_commands.py",
+      "bytes": 2262,
+      "sha256": "993ea88ca2f20c3e7946ceb2ec266201a71e32d1b3acc9a31820d1690431e052"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/pipeline.py",
+      "bytes": 4992,
+      "sha256": "5c55955a220f407b555ee67bd0da73081a610e823c7531b5f5f30ba2dcae97e5"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/prepare.py",
+      "bytes": 4236,
+      "sha256": "bc6e6baa913869c47493e56d87b1fd3b2179468f290a0642edb1d15b04179943"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/production_cards.py",
+      "bytes": 12544,
+      "sha256": "09cdbede986fede3034b0295ed352fc9cf755ad111ca5c870803318f6209a4f4"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/production_supervisor.py",
+      "bytes": 15510,
+      "sha256": "38943d6685d7a2144cd43ce02e2fd7ee76de116fe117d00679c149d584c5ee87"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/quota_panel_view.py",
+      "bytes": 3909,
+      "sha256": "9bf6d3a1cff599d62d15445ddf4f06bd8f50b977e0746087a436ee8924fe64ad"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/read_plans.py",
+      "bytes": 6892,
+      "sha256": "8aa282f15e141756c9a127badc0101eb30a2325508d72a4fb8136955f781d87e"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/reconcile_starts.py",
+      "bytes": 2244,
+      "sha256": "21191c83bb868c0cb55ad238b0fa5a43bf03c7da3c144970a4e7c34cedc7fc86"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/refresh_current_ledger.py",
+      "bytes": 28738,
+      "sha256": "7d5f170ce730c0594b0ee20697ff59de45efe68a97fc157c0bc11dbb73dd2df0"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/restart_workbench_supported.py",
+      "bytes": 2252,
+      "sha256": "8361962b3cf097e0f3ac352e8a1a880b78bfa7e51aabcdc3aa117e1edaa3a55a"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/save_copy_reply.py",
+      "bytes": 9137,
+      "sha256": "3891608e871becb51c32c5a8e94aa6214c1b1f03365d1237a6db3b2878b6c8f3"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/schedule_followup.py",
+      "bytes": 1625,
+      "sha256": "a4cbc024a174e06c5c6669cf9d3c97fff859cfdc739ad7c7e8824a18cf2e341a"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/send_repair_comparison.py",
+      "bytes": 3658,
+      "sha256": "53bd7b075185767f2819075b3823eccd4bc1f768a8f4678259e2c38a89394fb0"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/stage_timing.py",
+      "bytes": 4368,
+      "sha256": "47ff17e2b512d96c07b3c38973cca0dd3bf728bc5a258a022c75be24942908b1"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/start_ready.py",
+      "bytes": 15985,
+      "sha256": "06b14d803e4611b9a3106832df1363cb0dcf61d6516bd66fafc5ed145ef94ef4"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/submit_rework_page.py",
+      "bytes": 13567,
+      "sha256": "c24c747f9ffac26929d4a1d1640a3e81a7648b45d081738d2fc4840457f6da57"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/test_batch_launch_queue.py",
+      "bytes": 2811,
+      "sha256": "e7154faaea188803f2db4871f002414756168d954ad63e94df2266cfa1f2bb69"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/test_check_visual_acceptance.py",
+      "bytes": 5038,
+      "sha256": "a50b77566328bb37a3e95d7ae86fe00aed3a654982896a3b9079a92af0272bf9"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/test_production_supervisor.py",
+      "bytes": 13712,
+      "sha256": "60512b63c15f3df5e09c1ab6465bff7984b71ad09df8e203746dd6651ec652e9"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/test_refresh_current_ledger.py",
+      "bytes": 2130,
+      "sha256": "2ee36f4c803e83f35b6552ad99a2c2771d653007cb5480cb65c0f585a51dcd86"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/test_save_copy_reply.py",
+      "bytes": 3685,
+      "sha256": "3a8cabc09df4d65e88c02c379199edf3a62cafe62df16cd0dbbd8a2c289d44a7"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/test_start_ready.py",
+      "bytes": 4083,
+      "sha256": "3fda8bcea8f49b5aba74baa0067701cf5098abadb2c5c34c68c15befc9ab7714"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/test_submit_rework_page.py",
+      "bytes": 1361,
+      "sha256": "e07ad0112e7439dfe0716a14fda9936105e21f30109859e0ee6852561e0f3e1b"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/test_upload_queue.py",
+      "bytes": 6067,
+      "sha256": "e7bd8a55b5f5ea32570a3af156370b3f55af2e603b3fedf1ddd2d2911e167b6c"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/upgrade_audited_metadata.py",
+      "bytes": 6491,
+      "sha256": "a545d6fe9ca7d1fed4cbfd2a549ff5f1528c7076dd410dc44f4c1c316c51169f"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/upload_budget.py",
+      "bytes": 2779,
+      "sha256": "b4c62a077c399202be398f0519bc4542040094bb2cfeec6cdc730aa2d8971f84"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/upload_queue.py",
+      "bytes": 21563,
+      "sha256": "d543123fe03fdea97e18520f34c42d8589c1bd9565d2afd16248b57895342527"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/watch_status_panel.py",
+      "bytes": 5863,
+      "sha256": "f32f24b4af0670657531db9d12950194c84de42aef3e3b5a637c7af340bfd94a"
+    },
+    {
+      "path": "skills/spoken-production-line/scripts/work_set_budget.py",
+      "bytes": 6776,
+      "sha256": "662abe9b4543fda3f136a1de2ca799e946375dfbedf601ac7d05eb7adb2c8972"
+    },
+    {
+      "path": "skills/spoken-production-line/SKILL.md",
+      "bytes": 984,
+      "sha256": "ee0d5269bc9bbd99117a9d21286cd1f93dc7965dff2559571bd57a1891c5dc24"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 2193,
+      "sha256": "6b2b7df28825d5ad3a801bf74ec34859e5d06c232366424ba8aaddef038b3885"
+    }
+  ]
+}

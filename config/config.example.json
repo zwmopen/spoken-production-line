@@ -1,0 +1,30 @@
+{
+  "taskRoot": "./data/tasks",
+  "materialRoot": "./data/materials",
+  "templateRoot": "./data/templates",
+  "finishedRoot": "./data/products",
+  "templateRegistry": "./data/templates/templates-registry.json",
+  "accounts": [
+    {
+      "id": "A",
+      "provider": "gpt1",
+      "cdpPort": 9431,
+      "attachmentBudget": 80
+    },
+    {
+      "id": "B",
+      "provider": "gpt2",
+      "cdpPort": 9432,
+      "attachmentBudget": 80
+    }
+  ],
+  "scope": "按已授权素材和真实模板生产",
+  "seed": 20261018,
+  "seasonPattern": "秋|9月|10月|11月",
+  "quotaEstimates": {
+    "windowMinutes": 180,
+    "images": 50,
+    "attachments": 80,
+    "officialGuarantee": false
+  }
+}

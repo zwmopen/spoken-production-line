@@ -1,0 +1,7 @@
+{
+  "accounts": {},
+  "idlePollSeconds": 30,
+  "minSleepSeconds": 2,
+  "maxSleepSeconds": 300,
+  "note": "Configure account-specific idempotent adapter commands before daemon execution."
+}

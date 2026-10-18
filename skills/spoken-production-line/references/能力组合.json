@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "system": "spoken-production-line",
+  "displayName": "口述生产线",
+  "modules": [
+    {
+      "id": "three-version-copy",
+      "displayName": "三版本文案",
+      "skill": "teambuilding-web-copywriter",
+      "entry": "../../teambuilding-web-copywriter/SKILL.md",
+      "integration": "shared-source-composition",
+      "trigger": "图片逐页验收通过后生成文案，或用户单独要求文案",
+      "inputs": [
+        "原素材TXT",
+        "事实账本",
+        "已确认计划",
+        "实际成图",
+        "当前文案技能规则"
+      ],
+      "outputs": [
+        "小红书1自然攻略版",
+        "小红书2大纲方案版",
+        "抖音攻略版"
+      ],
+      "archive": "作品目录唯一文案.txt",
+      "standaloneAllowed": true,
+      "fallbackWhenMissing": "记录缺失并恢复共享技能入口，不自行编造替代合同"
+    },
+    {
+      "id": "codex-template-chat",
+      "skill": "local-template-chat-production",
+      "controllerSkill": "template-session-controller",
+      "nativeEngine": "codex-teambuilding-api-replication",
+      "integration": "shared-source-composition",
+      "inputs": [
+        "稳定模板ID及Codex深链",
+        "本地素材完整目录",
+        "本地源模板目录",
+        "正式成品根",
+        "执行授权"
+      ],
+      "outputs": [
+        "独立原生图",
+        "三版文案.txt",
+        "manifest与逐页QA"
+      ],
+      "quota": "Codex自身额度，与网页A/B分开",
+      "standaloneAllowed": true,
+      "status": "实测任务已分发，尚未证明交付"
+    }
+  ]
+}

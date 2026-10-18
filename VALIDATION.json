@@ -1,0 +1,72 @@
+{
+  "version": "2026.10.18-preview.1",
+  "checkedAt": "2026-10-18T20:20:40.734659+08:00",
+  "syntax": "all packaged Python files parsed",
+  "credentialScan": "no known token/account/group patterns found; no config/data bundled",
+  "unitTests": {
+    "count": 29,
+    "passed": 29,
+    "scope": [
+      "submission uncertainty",
+      "writer recovery",
+      "batch scheduling",
+      "copy persistence"
+    ],
+    "liveServiceCalls": false
+  },
+  "smoke": [
+    {
+      "command": [
+        "configure.py"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "output": "Local empty workspace configured; no platform request submitted.\n",
+      "error": ""
+    },
+    {
+      "command": [
+        "doctor.py"
+      ],
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "passed": true,
+      "output": "{\n  \"checks\": {\n    \"python310\": true,\n    \"websocket\": true,\n    \"PIL\": true,\n    \"requests\": true,\n    \"configured\": true,\n    \"taskRoot\": true,\n    \"templateRegistry\": false\n  },\n  \"productionReady\": false,\n  \"note\": \"Offline check only; browser, templates, adapters and end-to-end production require verification.\"\n}\n",
+      "error": ""
+    },
+    {
+      "command": [
+        "skills/spoken-production-line/scripts/pipeline.py",
+        "status",
+        "--task-root",
+        ".\\data\\tasks"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "output": "[]\n",
+      "error": ""
+    },
+    {
+      "command": [
+        "skills/spoken-production-line/scripts/production_supervisor.py",
+        "--task-root",
+        ".\\data\\tasks",
+        "--once"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "output": "[{\"stage\": \"UNCONFIGURED\", \"error\": \"No account adapters configured\"}]\n",
+      "error": ""
+    }
+  ],
+  "unverified": [
+    "cross-machine browser installation",
+    "all production adapters wired automatically",
+    "continuous 24-hour production",
+    "actual sleep/quota recovery on a recipient machine"
+  ],
+  "releaseClass": "preview"
+}
